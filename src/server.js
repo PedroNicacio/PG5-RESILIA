@@ -4,7 +4,7 @@ const app = require('./index.js')
 // escolhendo a porta em que o servidor será aberto
 const port = 3000
 
-// abrindo o servidor na porta escolhida
+// abrindo o servidor na porta escolhida0
 app.listen(port, () => {
     console.log(`Server rodando em http://localhost:${port}/`)
 })

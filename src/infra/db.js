@@ -1,12 +1,12 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./src/infra/database.db');
 
-const string = `CREATE TABLE Funcionarios(  
+const string = `CREATE TABLE Cliente(  
         id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
         nome TEXT(50),
+        email varchar(30)
         cpf INT(11),
-        cargo VARCHAR(30),
-        salario INT(8)
+        endereco text(50),
     );`
 
 // //Processamento de sinal
